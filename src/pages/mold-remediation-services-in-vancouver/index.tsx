@@ -1,75 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Navigation from "@/components/Navigation";
-import { Phone, ArrowRight, Shield, Search, Clock, CheckCircle2, Microscope, SprayCanIcon } from 'lucide-react';
-import Image from 'next/image';
+import {
+  Phone,
+  ArrowRight,
+  Fan,
+  Droplets,
+  ThermometerSnowflake,
+  Timer,
+  Gauge,
+  CheckCircle2,
+} from "lucide-react";
+import Image from "next/image";
 
-const MoldRemediation = () => {
-  const [customerType, setCustomerType] = useState<'homeowner' | 'business' | null>(null);
+const StructuralDrying = () => {
+  const [customerType, setCustomerType] = useState<
+    "homeowner" | "business" | null
+  >(null);
 
   const handleEmergencyCall = () => {
-    window.location.href = 'tel:+1 (833) 324-2818';
+    window.location.href = "tel:+1 (833) 324-2818";
   };
 
-  const serviceFeatures = [
+  const dryingFeatures = [
     {
-      icon: <Microscope className="w-6 h-6" />,
-      title: "Advanced Detection",
-      description: "State-of-the-art testing equipment identifies all mold species and moisture sources"
+      icon: <Fan className="w-6 h-6" />,
+      title: "Industrial Air Movers",
+      description:
+        "3x more powerful than standard equipment, strategically placed for maximum moisture removal",
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Certified Experts",
-      description: "IICRC certified technicians with specialized mold remediation training"
+      icon: <ThermometerSnowflake className="w-6 h-6" />,
+      title: "Advanced Dehumidifiers",
+      description:
+        "Removes up to 240 pints of water per day - faster than any residential system",
     },
     {
-      icon: <SprayCanIcon className="w-6 h-6" />,
-      title: "Safe Treatment",
-      description: "EPA-approved solutions and contained remediation processes"
+      icon: <Gauge className="w-6 h-6" />,
+      title: "Precision Monitoring",
+      description:
+        "Military-grade moisture detection ensures complete drying of hidden water pockets",
     },
     {
-      icon: <Search className="w-6 h-6" />,
-      title: "Prevention Focus",
-      description: "Comprehensive moisture control to prevent future growth"
-    }
+      icon: <Timer className="w-6 h-6" />,
+      title: "24/7 Active Monitoring",
+      description:
+        "Real-time adjustments and tracking prevent secondary damage and mold growth",
+    },
   ];
 
-  const remediationServices = [
+  const processSteps = [
     {
-      title: "Inspection & Testing",
-      points: [
-        "Advanced moisture detection",
-        "Air quality testing",
-        "Hidden mold detection",
-        "Laboratory analysis"
-      ]
+      number: "01",
+      title: "Rapid Response",
+      description:
+        "Expert team arrives within 60 minutes with industrial equipment",
     },
     {
-      title: "Mold Removal",
-      points: [
-        "HEPA air filtration",
-        "Contamination containment",
-        "Safe mold elimination",
-        "Surface treatment"
-      ]
+      number: "02",
+      title: "Power Deployment",
+      description: "Immediate setup of military-grade drying systems",
     },
     {
-      title: "Restoration",
-      points: [
-        "Structural repair",
-        "Material replacement",
-        "Dehumidification",
-        "Preventive treatments"
-      ]
+      number: "03",
+      title: "Active Monitoring",
+      description: "24/7 tracking with thermal imaging and moisture sensors",
     },
     {
-      title: "Prevention",
-      points: [
-        "Moisture source elimination",
-        "Ventilation improvement",
-        "Waterproofing services",
-        "Ongoing protection"
-      ]
-    }
+      number: "04",
+      title: "Guaranteed Results",
+      description: "Complete structural drying verified by scientific testing",
+    },
   ];
 
   return (
@@ -79,27 +79,32 @@ const MoldRemediation = () => {
       {/* Hero Section */}
       <section className="relative pt-20 bg-gradient-to-b from-stone-100 to-[#F5F4F0]">
         <div className="absolute inset-0 bg-grid-stone-200 bg-[size:32px_32px] [mask-image:linear-gradient(to_bottom,white,transparent)]" />
-        
+
         <div className="max-w-7xl mx-auto px-4 relative">
           <div className="flex flex-col md:flex-row gap-12 items-center py-16">
             <div className="w-full md:w-1/2">
               <div className="inline-block bg-[#8B2635] text-white px-4 py-1 rounded-full text-sm font-medium mb-6">
-                Certified Mold Remediation Specialists
+                Available Now - 60 Minute Response
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 text-[#1C1917]">
                 Professional
-                <span className="block text-[#8B2635]">Mold Remediation</span>
+                <span className="block text-[#8B2635]">
+                  Moisture Extraction & Recovery
+                </span>
               </h1>
               <p className="text-xl text-[#44403C] mb-8 leading-relaxed">
-                Complete mold elimination and prevention by certified experts. We detect, remove, and prevent mold growth while ensuring your safety and peace of mind.
+                Stop water damage in its tracks. Our industrial-grade extraction
+                and rapid drying systems prevent mold, protect your property,
+                and restore your space fast. Trusted by 500+ Brooklyn property
+                owners.
               </p>
-              
+
               <button
                 onClick={handleEmergencyCall}
                 className="group inline-flex items-center justify-center gap-3 bg-[#8B2635] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#7A2230] transition-all duration-300"
               >
                 <Phone className="w-6 h-6" />
-                <span>Get Expert Help Now</span>
+                <span>Call Now - Available 24/7</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -107,8 +112,8 @@ const MoldRemediation = () => {
             <div className="w-full md:w-1/2">
               <div className="relative h-[600px] w-full">
                 <Image
-                  src="/photos/homepage/5.jpg"
-                  alt="Professional Mold Remediation"
+                  src="/photos/homepage/2.jpg"
+                  alt="Professional Structural Drying Equipment"
                   fill
                   className="object-cover rounded-xl"
                   priority
@@ -124,13 +129,21 @@ const MoldRemediation = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-[#1C1917]">Expert Mold Solutions</h2>
-            <p className="text-lg text-[#44403C]">Advanced technology and certified expertise for complete mold elimination</p>
+            <h2 className="text-4xl font-bold mb-4 text-[#1C1917]">
+              Military-Grade Equipment
+            </h2>
+            <p className="text-lg text-[#44403C]">
+              Powerful industrial systems that outperform standard drying
+              methods
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {serviceFeatures.map((feature, index) => (
-              <div key={index} className="bg-stone-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+            {dryingFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-stone-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+              >
                 <div className="text-[#8B2635] mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-[#44403C]">{feature.description}</p>
@@ -140,47 +153,59 @@ const MoldRemediation = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Process Steps */}
       <section className="py-20 bg-[#F5F4F0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-[#1C1917]">Complete Remediation Process</h2>
-            <p className="text-lg text-[#44403C]">Thorough mold elimination and prevention solutions</p>
+            <h2 className="text-4xl font-bold mb-4 text-[#1C1917]">
+              Guaranteed Results in 72 Hours
+            </h2>
+            <p className="text-lg text-[#44403C]">
+              Our battle-tested process eliminates water damage fast
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {remediationServices.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-[#1C1917]">{service.title}</h3>
-                <ul className="space-y-3">
-                  {service.points.map((point, pointIndex) => (
-                    <li key={pointIndex} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#8B2635]" />
-                      <span className="text-[#44403C]">{point}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {processSteps.map((step, index) => (
+              <div
+                key={index}
+                className="relative bg-white p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="text-6xl font-bold text-[#8B2635]/10 absolute -top-4 right-4">
+                  {step.number}
+                </div>
+                <h3 className="text-xl font-semibold mb-2 relative z-10">
+                  {step.title}
+                </h3>
+                <p className="text-[#44403C] relative z-10">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* Equipment Setup Image Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#1C1917]">Guaranteed Results</h2>
+              <h2 className="text-4xl font-bold mb-6 text-[#1C1917]">
+                Why We&apos;re Brooklyn&apos;s #1 Choice
+              </h2>
               <p className="text-lg text-[#44403C] mb-6 leading-relaxed">
-                Our certified remediation experts have successfully treated over 1,000 properties. We guarantee complete mold elimination and provide preventive solutions for lasting protection.
+                Our military-grade equipment and scientific approach removes
+                water 3x faster than standard methods. We prevent mold growth
+                and structural damage by extracting hidden moisture other
+                companies miss.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Certified mold remediation experts",
-                  "EPA-approved treatment methods",
-                  "Complete moisture control",
-                  "Long-term prevention solutions"
+                  "Up to 240 pints of water removed per day",
+                  "Thermal imaging finds hidden moisture",
+                  "24/7 monitoring prevents mold growth",
+                  "Guaranteed results in 72 hours",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8B2635]" />
@@ -191,8 +216,8 @@ const MoldRemediation = () => {
             </div>
             <div className="relative h-[500px]">
               <Image
-                src="/photos/homepage/1.jpg"
-                alt="Mold Remediation Results"
+                src="/photos/homepage/3.jpg"
+                alt="Equipment Setup"
                 fill
                 className="object-cover rounded-xl"
               />
@@ -205,8 +230,12 @@ const MoldRemediation = () => {
       <section className="py-20 bg-[#F5F4F0]">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C1917]">Get Expert Help Today</h2>
-            <p className="text-lg text-[#44403C]">Professional assessment • Certified remediation</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C1917]">
+              Get Professional Help Now
+            </h2>
+            <p className="text-lg text-[#44403C]">
+              60-minute response • 100% satisfaction guaranteed
+            </p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -214,32 +243,40 @@ const MoldRemediation = () => {
               {/* Customer Type Selection */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <button
-                  onClick={() => setCustomerType('homeowner')}
+                  onClick={() => setCustomerType("homeowner")}
                   className={`p-4 rounded-xl border-2 transition-all duration-300 ${
-                    customerType === 'homeowner'
-                      ? 'border-[#8B2635] bg-[#8B2635]/5'
-                      : 'border-stone-200 hover:border-[#8B2635]'
+                    customerType === "homeowner"
+                      ? "border-[#8B2635] bg-[#8B2635]/5"
+                      : "border-stone-200 hover:border-[#8B2635]"
                   }`}
                 >
-                  <h3 className={`text-lg font-semibold mb-1 ${
-                    customerType === 'homeowner' ? 'text-[#8B2635]' : 'text-[#1C1917]'
-                  }`}>
+                  <h3
+                    className={`text-lg font-semibold mb-1 ${
+                      customerType === "homeowner"
+                        ? "text-[#8B2635]"
+                        : "text-[#1C1917]"
+                    }`}
+                  >
                     Homeowner
                   </h3>
-                  <p className="text-sm text-[#44403C]">Residential properties</p>
+                  <p className="text-sm text-[#44403C]">Residential property</p>
                 </button>
 
                 <button
-                  onClick={() => setCustomerType('business')}
+                  onClick={() => setCustomerType("business")}
                   className={`p-4 rounded-xl border-2 transition-all duration-300 ${
-                    customerType === 'business'
-                      ? 'border-[#8B2635] bg-[#8B2635]/5'
-                      : 'border-stone-200 hover:border-[#8B2635]'
+                    customerType === "business"
+                      ? "border-[#8B2635] bg-[#8B2635]/5"
+                      : "border-stone-200 hover:border-[#8B2635]"
                   }`}
                 >
-                  <h3 className={`text-lg font-semibold mb-1 ${
-                    customerType === 'business' ? 'text-[#8B2635]' : 'text-[#1C1917]'
-                  }`}>
+                  <h3
+                    className={`text-lg font-semibold mb-1 ${
+                      customerType === "business"
+                        ? "text-[#8B2635]"
+                        : "text-[#1C1917]"
+                    }`}
+                  >
                     Business
                   </h3>
                   <p className="text-sm text-[#44403C]">Commercial property</p>
@@ -282,25 +319,24 @@ const MoldRemediation = () => {
               </div>
 
               {/* Business-specific fields */}
-              {customerType === 'business' && (
+              {customerType === "business" && (
                 <div className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium text-[#1C1917] mb-2">
-                      Building Type
+                      Business Type
                     </label>
-                    <select
-                      className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-[#8B2635] focus:border-transparent"
-                    >
-                      <option value="">Select building type</option>
-                      <option value="office">Office Building</option>
-                      <option value="retail">Retail Space</option>
+                    <select className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-[#8B2635] focus:border-transparent">
+                      <option value="">Select business type</option>
+                      <option value="retail">Retail</option>
+                      <option value="office">Office</option>
+                      <option value="restaurant">Restaurant</option>
                       <option value="warehouse">Warehouse</option>
-                      <option value="apartment">Apartment Complex</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-[#1C1917] mb-2">
-                      Affected Area (sq ft) - Approximate
+                      Property Size (sq ft) - Approximate
                     </label>
                     <input
                       type="number"
@@ -312,12 +348,12 @@ const MoldRemediation = () => {
 
               <div>
                 <label className="block text-sm font-medium text-[#1C1917] mb-2">
-                  Describe the Mold Issue
+                  Brief Description of Situation
                 </label>
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-[#8B2635] focus:border-transparent"
-                  placeholder="Tell us about the mold problem you're experiencing..."
+                  placeholder="Please describe the water damage situation..."
                 ></textarea>
               </div>
 
@@ -325,38 +361,18 @@ const MoldRemediation = () => {
                 type="submit"
                 className="w-full bg-[#8B2635] text-white py-4 rounded-lg text-lg font-semibold hover:bg-[#7A2230] transition-colors duration-300"
               >
-                Schedule Your Expert Assessment
+                Submit Request
               </button>
 
               <p className="text-sm text-[#44403C] text-center">
-                Professional inspection • Certified remediation • Guaranteed results
+                For emergencies, call us directly at +1 (833) 324-2818
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Final CTA Section */}
-      <section className="py-16 bg-[#8B2635]">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Do not Let Mold Compromise Your Health
-          </h2>
-          <p className="text-xl mb-8 text-stone-200">
-            Professional mold remediation with guaranteed complete elimination.
-          </p>
-          <button
-            onClick={handleEmergencyCall}
-            className="group inline-flex items-center justify-center gap-3 bg-white text-[#8B2635] px-8 py-4 rounded-full text-xl font-bold hover:bg-stone-100 transition-all duration-300"
-          >
-            <Phone className="w-6 h-6" />
-            <span>Call For Expert Service</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
         </div>
       </section>
     </div>
   );
 };
 
-export default MoldRemediation;
+export default StructuralDrying;
