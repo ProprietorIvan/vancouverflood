@@ -42,7 +42,7 @@ export default async function handler(
             const mailOptions = {
                 from: process.env.SMTP_FROM,
                 to,
-                subject: "Somebody is looking for a drywall quote",
+                subject: "Somebody is looking for a Water Extraction Quote",
                 html: generateEmail({
                     name,
                     email,
