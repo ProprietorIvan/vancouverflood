@@ -310,7 +310,7 @@ const Home = () => {
               src="/photos/homepage/2.jpg"
               alt="Vancouver Water Damage Restoration Service"
               fill
-              className="object-cover object-center"
+              className="object-cover object-center blur-[2px]"
               priority
               sizes="100vw"
             />
@@ -393,10 +393,10 @@ const Home = () => {
                   <Clock className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">
-                  30-Minute Emergency Response
+                  90-Minute Emergency Response
                 </h3>
                 <p className="text-gray-700">
-                  Our Vancouver-based emergency response team arrives within 30
+                  Our Vancouver-based emergency response team arrives within 90
                   minutes to minimize water damage and start immediate
                   restoration.
                 </p>

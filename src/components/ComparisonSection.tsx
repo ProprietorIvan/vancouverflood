@@ -220,7 +220,7 @@ const ComparisonSection: React.FC = () => {
           )}
 
           <h2 className="text-xl md:text-2xl text-stone-300 text-center mb-6">
-            120-Minute Response Time • All Vancouver Areas
+            90-Minute Response Time • All Vancouver Areas
           </h2>
 
           {mounted && (

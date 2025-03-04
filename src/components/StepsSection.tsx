@@ -24,7 +24,7 @@ const StepsSection = () => {
       label: "VANCOUVER PROPERTIES RESTORED",
     },
     {
-      value: "30min",
+      value: "90min",
       label: "VANCOUVER RESPONSE TIME",
     },
     {
@@ -43,7 +43,7 @@ const StepsSection = () => {
       icon: Phone,
       phase: "EMERGENCY RESPONSE",
       title: "Emergency Contact",
-      description: "30-minute response time across Greater Vancouver",
+      description: "90-minute response time across Greater Vancouver",
       timing: "Immediate Response",
       primaryPoints: [
         "Vancouver-wide emergency service",
