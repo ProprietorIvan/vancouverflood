@@ -1,128 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
-  <url>
-    <loc>https://vancouverflood.com/</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Main Service Pages -->
-  <url>
-    <loc>https://vancouverflood.com/services</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/contact-us</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Specific Service Pages -->
-  <url>
-    <loc>https://vancouverflood.com/flood-repair-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/flood-restoration-burnaby</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/mold-remediation-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/structural-repair-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-extraction</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/drying-and-dehumidification</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- API Routes (exclude if these are just backend endpoints) -->
-  <!-- <url>
-    <loc>https://vancouverflood.com/api</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url> -->
-  
-  <!-- Additional Service Area Pages (based on your SEO strategy) -->
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-downtown-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-west-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-north-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-burnaby</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-richmond</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-restoration-surrey</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Additional Pages (add based on actual site structure) -->
-  <url>
-    <loc>https://vancouverflood.com/about-us</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/testimonials</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://vancouverflood.com/water-damage-blog</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-</urlset>
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Navigation from "@/components/Navigation";
+
+const Sitemap = () => {
+  const siteData = {
+    mainPages: [
+      { url: "/", title: "Home" },
+      { url: "/services", title: "Water Damage Services" },
+      { url: "/contact-us", title: "Contact Us" },
+      { url: "/about-us", title: "About Us" },
+      { url: "/testimonials", title: "Customer Testimonials" },
+      { url: "/water-damage-blog", title: "Water Damage Blog" },
+    ],
+    servicePages: [
+      { url: "/flood-repair-services-in-vancouver", title: "Flood Repair Services" },
+      { url: "/flood-restoration-burnaby", title: "Flood Restoration in Burnaby" },
+      { url: "/mold-remediation-services-in-vancouver", title: "Mold Remediation Services" },
+      { url: "/structural-repair-services-in-vancouver", title: "Structural Repair Services" },
+      { url: "/water-extraction", title: "Water Extraction Services" },
+      { url: "/drying-and-dehumidification", title: "Drying and Dehumidification" },
+      { url: "/basement-flood-recovery", title: "Basement Flood Recovery" },
+      { url: "/storm-damage-repair", title: "Storm Damage Repair" },
+      { url: "/emergency-services", title: "Emergency Services" },
+    ],
+    serviceAreas: [
+      { url: "/water-damage-restoration-burnaby", title: "Burnaby" },
+    ],
+    legalPages: [
+      { url: "/privacy", title: "Privacy Policy" },
+      { url: "/terms", title: "Terms & Conditions" },
+    ],
+  };
+
+  return (
+    <>
+      <Head>
+        <title>Site Map | Vancouver Flood Restoration | Felicita Holdings</title>
+        <meta
+          name="description"
+          content="Browse the complete list of pages on Vancouver Flood Restoration website. Find information about our water damage services and service areas."
+        />
+        <link rel="canonical" href="https://vancouverflood.com/sitemap" />
+      </Head>
+
+      <div className="min-h-screen bg-[#F5F4F0]">
+        <Navigation showActions={true} />
+
+        <main className="max-w-6xl mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold mb-12">Site Map</h1>
+
+
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-6 text-[#8B2635]">Our Services</h2>
+              <ul className="space-y-3">
+                {siteData.servicePages.map((page) => (
+                  <li key={page.url}>
+                    <Link 
+                      href={page.url}
+                      className="text-gray-800 hover:text-[#8B2635] hover:underline"
+                    >
+                      {page.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-6 text-[#8B2635]">Service Areas</h2>
+              <ul className="space-y-3">
+                {siteData.serviceAreas.map((page) => (
+                  <li key={page.url}>
+                    <Link 
+                      href={page.url}
+                      className="text-gray-800 hover:text-[#8B2635] hover:underline"
+                    >
+                      {page.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </>
+  );
+};
+
+export default Sitemap;

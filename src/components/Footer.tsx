@@ -8,6 +8,7 @@ import {
   MapPin,
   ExternalLink,
 } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -50,19 +51,25 @@ const Footer = () => {
             <div className="h-1 w-16 bg-white mb-6"></div>
             <ul className="space-y-3 text-stone-300">
               <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                Water Damage Restoration
+                <Link href="/water-damage-restoration-vancouver">
+                  Water Damage Restoration
+                </Link>
               </li>
               <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                Basement Flood Recovery
+                <Link href="/basement-flood-recovery">
+                  Basement Flood Recovery
+                </Link>
               </li>
               <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                Storm Damage Repair
+                <Link href="/storm-damage-repair">Storm Damage Repair</Link>
               </li>
               <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                Mold Remediation
+                <Link href="/mold-remediation-services-in-vancouver">
+                  Mold Remediation
+                </Link>
               </li>
               <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-                Emergency Services
+                <Link href="/emergency-services">Emergency Services</Link>
               </li>
             </ul>
           </div>
@@ -84,35 +91,55 @@ const Footer = () => {
                 </p>
               </div>
               <div className="pt-4 border-t border-stone-700">
-                <div className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer mb-3">
+                <a
+                  href="tel:+17786546742"
+                  className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer mb-3"
+                >
                   <Phone size={16} />
                   <p>+1 778-654-6742</p>
-                </div>
-                <div className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer mb-3">
+                </a>
+                <a
+                  href="mailto:office@vancouverflood.com"
+                  className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer mb-3"
+                >
                   <Mail size={16} />
                   <p>office@vancouverflood.com</p>
-                </div>
-                <div className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer">
+                </a>
+                <a
+                  href="https://maps.google.com/?q=828+Cardero+St,+Vancouver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
                   <MapPin size={16} />
                   <p>828 Cardero St, Vancouver</p>
-                </div>
+                </a>
               </div>
               <div className="flex space-x-4 pt-4">
                 <a
-                  href="#"
+                  href="https://facebook.com/felicitaholdings"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-stone-700 hover:bg-white hover:text-[#8B2635] transition-all duration-300 rounded-lg"
+                  aria-label="Facebook"
                 >
                   <Facebook size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://twitter.com/felicitaholdings"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-stone-700 hover:bg-white hover:text-[#8B2635] transition-all duration-300 rounded-lg"
+                  aria-label="Twitter"
                 >
                   <Twitter size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://instagram.com/felicitaholdings"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-stone-700 hover:bg-white hover:text-[#8B2635] transition-all duration-300 rounded-lg"
+                  aria-label="Instagram"
                 >
                   <Instagram size={20} />
                 </a>
@@ -131,18 +158,18 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex space-x-8">
-              <a
-                href="#"
+              <Link
+                href="/privacy"
                 className="hover:text-white transition-colors duration-300"
               >
                 PRIVACY POLICY
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/terms"
                 className="hover:text-white transition-colors duration-300"
               >
                 TERMS & CONDITIONS
-              </a>
+              </Link>
             </div>
           </div>
         </div>

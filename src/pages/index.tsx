@@ -317,55 +317,58 @@ const Home = () => {
             <div className="absolute inset-0 bg-black/40" />
           </div>
 
-          <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 w-full">
-            <div className="max-w-2xl">
-              <span className="inline-block px-4 py-2 rounded-full bg-[#8B2635] text-white text-sm font-medium mb-4">
-                24/7 Emergency Water Damage Service
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
-                Vancouver&apos;s Premier{" "}
-                <span className="text-[#F5F4F0]">Flood Restoration</span> &{" "}
-                <span className="text-[#F5F4F0]">Water Damage</span> Experts
-              </h1>
-              <p className="text-xl md:text-2xl text-white mb-8">
-                30-Minute Response Time | Licensed & Insured | 100% Satisfaction
-                Guaranteed
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <a
-                  href="tel:+17786546742"
-                  className="flex items-center justify-center gap-2 bg-[#8B2635] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#7A1F2E] transition-colors duration-300"
-                >
-                  <Phone className="w-5 h-5" />
-                  <span>Call (778) 654-6742</span>
-                </a>
-                <button
-                  onClick={() =>
-                    handleNavigation("/flood-repair-services-in-vancouver")
-                  }
-                  className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#F0F0E8] transition-colors duration-300"
-                >
-                  <span>View Services</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
-              <div className="bg-black/30 p-4 rounded-lg">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-6 h-6 fill-[#FFD700] text-[#FFD700]"
-                      />
-                    ))}
-                  </div>
-                  <span className="text-white text-lg font-medium">
-                    4.9/5 Rating (109+ Reviews)
-                  </span>
-                </div>
-                <p className="text-white text-base">
-                  Trusted by 1,000+ Vancouver homeowners & businesses since 1995
+          <div className="relative w-full">
+            <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 flex justify-end">
+              <div className="max-w-2xl text-right">
+                <span className="inline-block px-4 py-2 rounded-full bg-[#8B2635] text-white text-sm font-medium mb-4">
+                  24/7 Emergency Water Damage Service
+                </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+                  Vancouver&apos;s Premier{" "}
+                  <span className="text-[#F5F4F0]">Flood Restoration</span> &{" "}
+                  <span className="text-[#F5F4F0]">Water Damage</span> Experts
+                </h1>
+                <p className="text-xl md:text-2xl text-white mb-8">
+                  30-Minute Response Time | Licensed & Insured | 100%
+                  Satisfaction Guaranteed
                 </p>
+                <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-end">
+                  <a
+                    href="tel:+17786546742"
+                    className="flex items-center justify-center gap-2 bg-[#8B2635] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#7A1F2E] transition-colors duration-300"
+                  >
+                    <Phone className="w-5 h-5" />
+                    <span>Call (778) 654-6742</span>
+                  </a>
+                  <button
+                    onClick={() =>
+                      handleNavigation("/flood-repair-services-in-vancouver")
+                    }
+                    className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#F0F0E8] transition-colors duration-300"
+                  >
+                    <span>View Services</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </div>
+                <div className="bg-black/30 p-4 rounded-lg">
+                  <div className="flex items-center gap-3 mb-3 justify-end">
+                    <span className="text-white text-lg font-medium">
+                      4.9/5 Rating (109+ Reviews)
+                    </span>
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-6 h-6 fill-[#FFD700] text-[#FFD700]"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-white text-base">
+                    Trusted by 1,000+ Vancouver homeowners & businesses since
+                    1995
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -420,7 +423,7 @@ const Home = () => {
                   100% Satisfaction Guarantee
                 </h3>
                 <p className="text-gray-700">
-                  Vancouvers most trusted water damage repair service with
+                  Vancouver&apos;s most trusted water damage repair service with
                   hundreds of 5-star reviews from satisfied customers.
                 </p>
               </div>
