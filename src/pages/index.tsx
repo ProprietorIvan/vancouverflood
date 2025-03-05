@@ -82,7 +82,7 @@ const Home = () => {
             },
             url: "https://vancouverflood.com",
             telephone: "+17786546742",
-            email: "info@vancouverflood.com",
+            email: "office@vancouverflood.com",
             openingHoursSpecification: {
               "@type": "OpeningHoursSpecification",
               dayOfWeek: [
