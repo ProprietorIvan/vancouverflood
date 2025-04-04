@@ -56,7 +56,7 @@ const Home = () => {
             name: "Vancouver Flood Restoration by Felicita Holdings",
             image: "https://vancouverflood.com/logo.png",
             description:
-              "Professional flood and water damage restoration services in Vancouver",
+              "Professional flood and water damage restoration services in Vancouver with 24/7 emergency response. 30-minute arrival, IICRC certified technicians.",
             priceRange: "$$",
             areaServed: {
               "@type": "GeoCircle",
@@ -134,6 +134,24 @@ const Home = () => {
                       "Specialized basement flooding remediation and repair services.",
                   },
                 },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Mold Remediation",
+                    description:
+                      "Complete mold removal and remediation services following water damage.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Sewage Cleanup",
+                    description:
+                      "Professional sewage backup cleanup and sanitization services.",
+                  },
+                },
               ],
             },
             review: {
@@ -167,14 +185,38 @@ const Home = () => {
             provider: {
               "@type": "LocalBusiness",
               name: "Vancouver Flood Restoration by Felicita Holdings",
+              telephone: "+17786546742",
+              priceRange: "$$",
             },
-            areaServed: {
-              "@type": "City",
-              name: "Vancouver",
-              sameAs: "https://en.wikipedia.org/wiki/Vancouver",
-            },
+            areaServed: [
+              {
+                "@type": "City",
+                name: "Vancouver",
+                sameAs: "https://en.wikipedia.org/wiki/Vancouver",
+              },
+              {
+                "@type": "City",
+                name: "Burnaby",
+              },
+              {
+                "@type": "City",
+                name: "Richmond",
+              },
+              {
+                "@type": "City",
+                name: "North Vancouver",
+              },
+              {
+                "@type": "City",
+                name: "West Vancouver",
+              },
+              {
+                "@type": "City",
+                name: "Surrey",
+              },
+            ],
             description:
-              "Professional emergency water damage restoration and flood repair services in Vancouver and surrounding areas, available 24/7.",
+              "Professional emergency water damage restoration and flood repair services in Vancouver and surrounding areas, available 24/7 with 30-minute response time.",
             serviceOutput:
               "Restored and dried property free from water damage and potential mold growth",
             offers: {
@@ -192,6 +234,69 @@ const Home = () => {
           })}
         </script>
 
+        {/* Structured Data - HowTo */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: "What to Do During a Water Emergency in Vancouver",
+            description:
+              "Step-by-step guide on what to do when you experience water damage in your Vancouver home or business",
+            totalTime: "PT30M",
+            tool: [
+              {
+                "@type": "HowToTool",
+                name: "Phone",
+              },
+              {
+                "@type": "HowToTool",
+                name: "Towels or mops",
+              },
+              {
+                "@type": "HowToTool",
+                name: "Buckets",
+              },
+            ],
+            step: [
+              {
+                "@type": "HowToStep",
+                name: "Ensure Safety",
+                text: "Turn off electricity in affected areas to prevent electrical hazards.",
+                image: "https://vancouverflood.com/images/safety-first.jpg",
+                url: "https://vancouverflood.com/water-damage-safety",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Stop the Water Source",
+                text: "If possible, locate and stop the source of water by shutting off water main, fixing the leak, etc.",
+                image: "https://vancouverflood.com/images/water-shut-off.jpg",
+                url: "https://vancouverflood.com/stopping-water-damage",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Remove Excess Water",
+                text: "Use towels, mops, and buckets to remove as much standing water as possible.",
+                image: "https://vancouverflood.com/images/remove-water.jpg",
+                url: "https://vancouverflood.com/water-extraction",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Call Professional Help",
+                text: "Contact Vancouver Flood Restoration at (778) 654-6742 for emergency water damage response.",
+                image: "https://vancouverflood.com/images/emergency-call.jpg",
+                url: "https://vancouverflood.com/contact-us",
+              },
+              {
+                "@type": "HowToStep",
+                name: "Document the Damage",
+                text: "Take photos and videos of all damaged areas for insurance purposes.",
+                image: "https://vancouverflood.com/images/document-damage.jpg",
+                url: "https://vancouverflood.com/insurance-claims",
+              },
+            ],
+          })}
+        </script>
+
         {/* Structured Data - FAQ */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -203,7 +308,7 @@ const Home = () => {
                 name: "How quickly can you respond to a water emergency in Vancouver?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Our emergency response team arrives at Vancouver locations within 30 minutes of your call, 24 hours a day, 7 days a week, including holidays.",
+                  text: "Our emergency response team arrives at Vancouver locations within 30 minutes of your call, 24 hours a day, 7 days a week, including holidays. We understand that water damage worsens with time, which is why we prioritize rapid response for all emergencies.",
                 },
               },
               {
@@ -211,7 +316,7 @@ const Home = () => {
                 name: "What areas in Vancouver do you service for water damage restoration?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "We service all of Vancouver and the Greater Vancouver area, including West Vancouver, North Vancouver, Burnaby, Richmond, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Surrey, and Delta.",
+                  text: "We service all of Vancouver and the Greater Vancouver area, including West Vancouver, North Vancouver, Burnaby, Richmond, New Westminster, Coquitlam, Port Coquitlam, Port Moody, Surrey, and Delta. Our technicians are strategically located throughout these areas to ensure quick response times.",
                 },
               },
               {
@@ -219,7 +324,172 @@ const Home = () => {
                 name: "Do you work with insurance for flood damage in Vancouver?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes, we work directly with all major insurance providers in British Columbia and can help manage your claim from start to finish, minimizing your stress during the restoration process.",
+                  text: "Yes, we work directly with all major insurance providers in British Columbia and can help manage your claim from start to finish, minimizing your stress during the restoration process. Our team documents all damage thoroughly and provides detailed reports required for your insurance claim.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What should I do immediately after discovering water damage?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "First, ensure everyone's safety by turning off electricity in affected areas if it's safe to do so. Then, if possible, stop the water source (turn off main water valve, etc.). Remove valuable items from the affected area, use towels or mops to soak up standing water, and immediately call Vancouver Flood Restoration at (778) 654-6742 for emergency response.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long does the water damage restoration process take?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The timeline for water damage restoration depends on the extent of damage, the type of water (clean, gray, or black), and affected materials. Small incidents might be resolved in 3-5 days, while severe flooding could take 1-2 weeks or longer. Our technicians use advanced moisture detection equipment to ensure complete drying before reconstruction begins.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do you provide mold remediation services after water damage?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, we offer comprehensive mold remediation services as part of our water damage restoration. Mold can begin growing within 24-48 hours after water exposure, so our process includes thorough antimicrobial treatments to prevent mold growth. If mold is already present, our IICRC certified technicians will safely remove it following industry protocols.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What types of water damage do you handle?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "We handle all types of water damage including: burst pipes, sewage backups, flooding from heavy rain, appliance leaks (washing machines, dishwashers, water heaters), roof leaks, basement flooding, toilet overflows, and bathtub/shower overflows. Our equipment and techniques are adapted to address each specific type of water damage effectively.",
+                },
+              },
+            ],
+          })}
+        </script>
+
+        {/* Structured Data - ServiceList */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Vancouver Flood Restoration Services",
+            description:
+              "Complete list of professional water damage restoration services offered in Vancouver",
+            numberOfItems: 7,
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                item: {
+                  "@type": "Service",
+                  name: "Emergency Water Extraction",
+                  description:
+                    "Rapid water removal using industrial-grade pumps and extractors to minimize damage",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                item: {
+                  "@type": "Service",
+                  name: "Structural Drying",
+                  description:
+                    "Complete drying of property structure using commercial dehumidifiers and air movers",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                item: {
+                  "@type": "Service",
+                  name: "Mold Remediation",
+                  description:
+                    "Complete mold detection, removal and prevention services",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 4,
+                item: {
+                  "@type": "Service",
+                  name: "Sewage Cleanup",
+                  description:
+                    "Safe removal and sanitization of contaminated water and sewage backups",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 5,
+                item: {
+                  "@type": "Service",
+                  name: "Content Restoration",
+                  description:
+                    "Cleaning, drying and restoration of water-damaged belongings and furniture",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 6,
+                item: {
+                  "@type": "Service",
+                  name: "Odor Removal",
+                  description:
+                    "Elimination of water damage related odors through advanced deodorization techniques",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
+                },
+              },
+              {
+                "@type": "ListItem",
+                position: 7,
+                item: {
+                  "@type": "Service",
+                  name: "Reconstruction Services",
+                  description:
+                    "Complete rebuilding and restoration of water damaged structures and materials",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    name: "Vancouver Flood Restoration",
+                  },
+                  serviceType: "Water Damage Restoration",
+                  areaServed: "Vancouver",
+                  telephone: "+17786546742",
                 },
               },
             ],
@@ -233,7 +503,7 @@ const Home = () => {
         />
         <meta
           property="og:description"
-          content="Vancouver's trusted water damage restoration experts. 30-minute response, IICRC certified technicians, and 100% satisfaction guarantee. Available 24/7 for emergencies."
+          content="Vancouver's #1 flood restoration & water damage repair with 30-minute response time. IICRC certified, 24/7 emergency service, 100% satisfaction guaranteed. Call (778) 654-6742 now."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vancouverflood.com" />
@@ -253,7 +523,7 @@ const Home = () => {
         />
         <meta
           name="twitter:description"
-          content="Vancouver's trusted water damage restoration experts. 30-minute response, IICRC certified technicians, and 100% satisfaction guarantee. Available 24/7 for emergencies."
+          content="Vancouver's #1 flood restoration & water damage repair with 30-minute response time. IICRC certified, 24/7 emergency service, 100% satisfaction guaranteed. Call (778) 654-6742 now."
         />
         <meta
           name="twitter:image"

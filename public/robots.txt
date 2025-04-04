@@ -1,4 +1,9 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://vancouverflood.com/sitemap.xml
+
+# Disallow API routes
+Disallow: /api/

@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://vancouverflood.com/</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,13 +11,13 @@
   <!-- Main Service Pages -->
   <url>
     <loc>https://vancouverflood.com/services</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/contact-us</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -25,70 +25,126 @@
   <!-- Specific Service Pages -->
   <url>
     <loc>https://vancouverflood.com/flood-repair-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/flood-restoration-burnaby</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/mold-remediation-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/structural-repair-services-in-vancouver</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/water-extraction</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/drying-and-dehumidification</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service Area Pages -->
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-burnaby</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vancouverflood.com/basement-flood-recovery</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://vancouverflood.com/water-damage-restoration-north-vancouver</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vancouverflood.com/storm-damage-repair</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://vancouverflood.com/water-damage-restoration-west-vancouver</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vancouverflood.com/emergency-services</loc>
-    <lastmod>2025-03-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://vancouverflood.com/water-damage-restoration-richmond</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-surrey</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-coquitlam</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-port-coquitlam</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-new-westminster</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-delta</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-langley</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-white-rock</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouverflood.com/water-damage-restoration-downtown-vancouver</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Legal Pages -->
   <url>
     <loc>https://vancouverflood.com/privacy</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://vancouverflood.com/terms</loc>
-    <lastmod>2025-03-04</lastmod>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
-  </urlset>
+</urlset>
